@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HardTech</title>
+</head>
+<body>
+    <header>
+        <h1>Tudo que você precisa saber sobre Hardware</h1>
+        <h2>E as melhores configurações para montar aquele PC Gamer dos sonhos!</h2>
+    </header>
+
+    <main>
+        <section>
+            <label for="barra-pesquisa"></label>
+            <input type="text" name="barra-pesquisa" id="barra-pesquisa" placeholder="Digite sobre qual componente você deseja saber..." list="hardware">
+            <datalist id="hardware">
+                <option value="Placa-Mãe">
+                <option value="Processador">
+                <option value="Cooler">
+                <option value="Memória RAM">
+                <option value="SSD">
+                <option value="Placa de Vídeo">
+                <option value="Fonte">
+            </datalist>
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+
+        <section class="resultado-pesquisa" id="resultado-pesquisa">
+        </section>
+    </main>
+
+    <footer>
+        <p>Tudo sobre Hardware 2024 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: tchurusbengo@imersao.com</p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
